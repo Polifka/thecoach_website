@@ -21,7 +21,7 @@
             </ul>
           </b-navbar-nav>
 
-          <!-- Right aligned nav items -->
+          <!-- Right aligned nav item -->
           <b-navbar-nav class="ml-auto">
             <li class="nav-item active">
               <a
@@ -38,9 +38,6 @@
     </div>
   </div>
 </template>
-// <router-link to="/Team">Team</router-link>
-
-
 
 <script>
 export default {

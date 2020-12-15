@@ -1,39 +1,46 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand"><router-link to="/">Home</router-link></a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-toggle="collapse"
-      data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-          <a class="nav-link"
-            ><router-link to="/Team">Team</router-link
-            ><span class="sr-only">(current)</span></a
-          >
-        </li>
+  <div>
+    <div>
+      <b-navbar toggleable="lg" variant="light">
+        <b-navbar-brand
+          ><a class="navbar-brand"
+            ><router-link to="/">Home</router-link></a
+          ></b-navbar-brand
+        >
+        <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
 
-        <li class="nav-item active">
-          <a
-            class="nav-link"
-            align="right"
-            href="https://www.instagram.com/thebuisnesscoach/"
-            target="_blank"
-            >Instagram!</a
-          >
-        </li>
-      </ul>
+        <b-collapse id="nav-collapse" is-nav>
+          <b-navbar-nav>
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link"
+                  ><router-link to="/Team">Team</router-link
+                  ><span class="sr-only">(current)</span></a
+                >
+              </li>
+            </ul>
+          </b-navbar-nav>
+
+          <!-- Right aligned nav items -->
+          <b-navbar-nav class="ml-auto">
+            <li class="nav-item active">
+              <a
+                class="nav-link"
+                align="right"
+                href="https://www.instagram.com/thebuisnesscoach/"
+                target="_blank"
+                >Instagram!</a
+              >
+            </li>
+          </b-navbar-nav>
+        </b-collapse>
+      </b-navbar>
     </div>
-  </nav>
+  </div>
 </template>
+// <router-link to="/Team">Team</router-link>
+
+
 
 <script>
 export default {
@@ -43,4 +50,8 @@ export default {
 </script>
 
 <style scoped>
+a {
+  text-decoration: none;
+  color: #000;
+}
 </style>

@@ -1,14 +1,14 @@
 <template>
   <div id="app">
-    <div class="row" style="margin-top:3px;">
-      <div class="col-1" style="padding-right:3px">
-        <img class="imgCss" src="./assets/logo.png" align="right"/>
-      </div>
-      <div class="col" style="padding-left:0px;">
-        <h2 class="headline" align="left">THEBUISNESSCOACH</h2>
+    <div class="row">
+      <div class="row margin-block-header">
+        <div class="row">
+            <img class="imgCss" src="./assets/logo.png" />
+            <h2>THEBUISNESSCOACH</h2>
+        </div>
       </div>
     </div>
-    <CoachNavbar/>
+    <CoachNavbar />
     <div class="main-container">
       <router-view></router-view>
     </div>
@@ -16,31 +16,29 @@
 </template>
 
 <script>
-import CoachNavbar from "./components/CoachNavbar"
+import CoachNavbar from "./components/CoachNavbar";
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    CoachNavbar
+    CoachNavbar,
   },
-  props: {
-  }
-}
+  props: {},
+};
 </script>
 
 <style scoped>
 .imgCss {
   width: 40px;
-  margin-top: 5px;
 }
-
-.headline {
-  font-size: 40px;
-  font-weight: 1000;
-}
-
-.main-container{
+.main-container {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 5px;
+}
+
+.margin-block-header {
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 10px;
 }
 </style>

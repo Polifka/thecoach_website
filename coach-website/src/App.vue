@@ -9,8 +9,9 @@
       </div>
     </div>
     <CoachNavbar/>
-
-    <router-view></router-view>
+    <div class="main-container">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 
@@ -35,5 +36,11 @@ export default {
 .headline {
   font-size: 40px;
   font-weight: 1000;
+}
+
+.main-container{
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 5px;
 }
 </style>

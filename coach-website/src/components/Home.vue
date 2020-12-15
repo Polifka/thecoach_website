@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: "WelcomePage",
+  name: "Home",
   props: {},
 };
 </script>

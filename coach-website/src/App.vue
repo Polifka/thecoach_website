@@ -8,15 +8,19 @@
         <h2 class="headline" align="left">THEBUISNESSCOACH</h2>
       </div>
     </div>
-    <MainContainer/>
+    <CoachNavbar/>
+
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import MainContainer from './components/MainContainer.vue'
+import CoachNavbar from "./components/CoachNavbar"
 export default {
-  components: { MainContainer },
   name: 'app',
+  components: {
+    CoachNavbar
+  },
   props: {
   }
 }

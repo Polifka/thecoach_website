@@ -1,7 +1,6 @@
 <template>
   <div class="hello">
     <div class="container">
-      <CoachNavbar />
       <div
         class="row jumbotron"
         style="padding-bottom: 1rem; padding-top: 2rem"
@@ -29,12 +28,8 @@
 </template>
 
 <script>
-import CoachNavbar from "../components/CoachNavbar";
 export default {
-  name: "mainContainer",
-  components: {
-    CoachNavbar,
-  },
+  name: "WelcomePage",
   props: {},
 };
 </script>

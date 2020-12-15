@@ -2,7 +2,9 @@
     <div class="row">
       <div class="row margin-block-header">
         <div class="row">
-            <img class="imgCss" src="../assets/logo.png" />
+            <router-link to="/">
+            <img class="imgCss" href="/" src="../assets/logo.png">
+            </router-link>
             <h2>THEBUISNESSCOACH</h2>
         </div>
       </div>

@@ -67,7 +67,7 @@ export default {
         this.showModal();
       } else {
         window.open(
-          "mailto:thebuisnesscach@outlook.de?subject=" +
+          "mailto:thebuisnesscoach@outlook.de?subject=" +
             this.subject +
             "&body=" +
             this.message

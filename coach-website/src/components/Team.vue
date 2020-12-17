@@ -15,7 +15,7 @@
     <div class="col-12 col-md-4">
       <b-card title="Meme Service Manager" sub-title="Mister Sebastian Meisinger |MSM|">
         <div id="over" style="width:100%; height:100%">
-          <img src="../assets/team/msm1.jpg" class="teamImg"/>
+          <img src="../assets/team/msm2.jpg" class="teamImg"/>
         </div>
         <b-card-text>
           Gehen dir die Memes wieder aus, der MSM hilft dir aus der Apache raus.
@@ -25,7 +25,7 @@
     <div class="col-12 col-md-4">
       <b-card title="Quality Mart" sub-title="Quick Marten |QM|">
         <div id="over" style="width:100%; height:100%">
-          <img src="../assets/team/mart.jpg" class="teamImg"/>
+          <img src="../assets/team/mart2.jpg" class="teamImg"/>
         </div>
         <b-card-text>
           Manchmal QUICK manchmal SMART, dat ist doch der QUICK MART.
@@ -48,7 +48,7 @@
     <div class="col-12 col-md-4">
       <b-card title="Kapellmeister" sub-title="Schmandi |KM|">
         <div id="over" style="width:100%; height:100%">
-          <img src="../assets/team/schmandi.jpg" class="teamImg"/>
+          <img src="../assets/team/schmandi2.jpg" class="teamImg"/>
         </div>
         <b-card-text>
           Sind die Glocken wieder am Läuten, muss du wohl genug Oetti käufen.
@@ -91,7 +91,7 @@
     <div class="col-12 col-md-4">
       <b-card title="Womem Ressource Management" sub-title="Carinchen |WRM|">
         <div id="over" style="width:100%; height:100%">
-          <img src="../assets/team/default.jpg" class="teamImg"/>
+          <img src="../assets/team/carinchen.jpg" class="teamImg"/>
         </div>
         <b-card-text>
           Fehlt dir noch die weibliche Prise, dat Carinchen besorgt dir diese.
@@ -104,7 +104,7 @@
     <div class="col-12 col-md-4">
       <b-card title="Chief Asien Dolmetscher" sub-title="Hsinlan |CAD|">
         <div id="over" style="width:100%; height:100%">
-          <img src="../assets/team/hsinlan.jpg" class="teamImg"/>
+          <img src="../assets/team/hsinlan2.jpg" class="teamImg"/>
         </div>
         <b-card-text>
           Ob Englisch Chinesisch oder auch auf Huhn, Sprachprobleme müssen mit Hsinlan ruhen!
@@ -114,7 +114,7 @@
     <div class="col-12 col-md-4">
       <b-card title="Chief Wine Officer" sub-title="Hannah |CWO|">
         <div id="over" style="width:100%; height:100%">
-          <img src="../assets/team/default.jpg" class="teamImg"/>
+          <img src="../assets/team/hannah.jpg" class="teamImg"/>
         </div>
         <b-card-text>
           Ist der Wein schon wieder aus, hilft dir Hannah gerne aus.
@@ -124,7 +124,7 @@
     <div class="col-12 col-md-4">
       <b-card title="Chief of Direct Sales" sub-title="Andi |CDS|">
         <div id="over" style="width:100%; height:100%">
-          <img src="../assets/team/default.jpg" class="teamImg"/>
+          <img src="../assets/team/andi.jpg" class="teamImg"/>
         </div>
         <b-card-text>
           Muss der Bitcoin über die Wupper, hilft dir der Andi mit eigenem Kutter.
@@ -201,9 +201,9 @@
 
         <div class="row">
     <div class="col-12 col-md-4">
-      <b-card title="Head of Marketing Placement Management" sub-title="Lukas |HMBM|">
+      <b-card title="Head of Marketing Placement Management" sub-title="Käptain |HMBM|">
         <div id="over" style="width:100%; height:100%">
-          <img src="../assets/team/default.jpg" class="teamImg"/>
+          <img src="../assets/team/kaptain.jpg" class="teamImg"/>
         </div>
         <b-card-text>
           Fehlt dir noch ein Marketing Gag, geh zum Coach und  flieg der Konkurrenz wag.

@@ -20,6 +20,12 @@
               </li>
               <li class="nav-item active">
                 <a class="nav-link"
+                  ><router-link to="/History">History</router-link
+                  ><span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link"
                   ><router-link to="/Contact">Contact</router-link
                   ><span class="sr-only">(current)</span></a
                 >

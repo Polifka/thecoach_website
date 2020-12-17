@@ -157,7 +157,7 @@
     <div class="col-12 col-md-4">
       <b-card title="Photograph" sub-title="Paul |PG|">
         <div id="over" style="width:100%; height:100%">
-          <img src="../assets/team/paul.jpg" class="teamImg"/>
+          <img src="../assets/team/paul2.jpg" class="teamImg"/>
         </div>
         <b-card-text>
          Hast du keine nicen Pics am Start, geh und frag den Photograph.

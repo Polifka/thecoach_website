@@ -5,18 +5,22 @@
     <div class="main-container">
       <router-view></router-view>
     </div>
+    <CoachFooter/>
   </div>
 </template>
 
 <script>
 import CoachNavbar from "./components/CoachNavbar";
 import CoachHeader from "./components/CoachHeader";
+import CoachFooter from "./components/CoachFooter";
+
 
 export default {
   name: "app",
   components: {
     CoachNavbar,
-    CoachHeader
+    CoachHeader,
+    CoachFooter
   },
   props: {},
 };
@@ -27,5 +31,6 @@ export default {
   margin-left: 5%;
   margin-right: 5%;
   margin-top: 3%;
+  min-height: 90%;
 }
 </style>

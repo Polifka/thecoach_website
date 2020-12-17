@@ -29,7 +29,7 @@
 
           <!-- Right aligned nav item -->
           <b-navbar-nav class="ml-auto" style="margin-right: 15px">
-            <li class="nav-item active">
+            <li class="nav-item active" style="margin-right:10px;">
               <b-button variant="outline-success" >
                 <a
                 href="https://paypal.me/pools/c/8tHh6GbWRi"
@@ -38,7 +38,7 @@
               >
               </b-button>
             </li>
-            <li class="nav-item active">
+            <li class="nav-item active" style="float:left;">
               <a
                 class="nav-link"
                 align="right"

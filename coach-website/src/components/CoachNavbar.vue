@@ -18,7 +18,7 @@
                   ><span class="sr-only">(current)</span></a
                 >
               </li>
-               <li class="nav-item active">
+              <li class="nav-item active">
                 <a class="nav-link"
                   ><router-link to="/Contact">Contact</router-link
                   ><span class="sr-only">(current)</span></a
@@ -28,7 +28,16 @@
           </b-navbar-nav>
 
           <!-- Right aligned nav item -->
-          <b-navbar-nav class="ml-auto">
+          <b-navbar-nav class="ml-auto" style="margin-right: 15px">
+            <li class="nav-item active">
+              <b-button variant="outline-success" >
+                <a
+                href="https://paypal.me/pools/c/8tHh6GbWRi"
+                target="_blank"
+                >DONATE!</a
+              >
+              </b-button>
+            </li>
             <li class="nav-item active">
               <a
                 class="nav-link"
@@ -57,5 +66,4 @@ a {
   text-decoration: none;
   color: #000;
 }
-
 </style>

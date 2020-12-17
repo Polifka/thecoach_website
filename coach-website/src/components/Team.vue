@@ -170,7 +170,7 @@
     <div class="col-12 col-md-4">
       <b-card title="Mannschaftsarzt" sub-title="Dorian |MA|">
         <div id="over" style="width:100%; height:100%">
-          <img src="../assets/team/dorian.jpg" class="teamImg"/>
+          <img src="../assets/team/dorian1.jpg" class="teamImg"/>
         </div>
         <b-card-text>
           Brauchst du nach dem Saufen eine Infusion, geh zum Dorian der gibt sie dir auch ohne Lohn.

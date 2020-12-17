@@ -32,7 +32,6 @@
             <li class="nav-item active" style="float: left">
               <a
                 class="nav-link"
-                align="right"
                 href="https://www.instagram.com/thebuisnesscoach/"
                 target="_blank"
                 >Instagram!</a

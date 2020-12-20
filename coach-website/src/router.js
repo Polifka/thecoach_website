@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 import Home from '@/components/Home.vue'
+import Score from '@/components/Score.vue'
 import Team from '@/components/Team.vue'
 import History from '@/components/History.vue'
 import Contact from '@/components/Contact.vue'
@@ -14,9 +15,10 @@ const router= new Router({
 
     mode: 'history', // uris without hashes #, see https://router.vuejs.org/guide/essentials/history-mode.html#html5-history-mode
     routes: [
-        { path: '/', component: Home },
+        { path: '/', component: Home },        
         { path: '/Team', component: Team},
         { path: '/History', component: History},
+        { path: '/Score', component: Score},
         { path: '/Contact', component: Contact}
     ]
 })

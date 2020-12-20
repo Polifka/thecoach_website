@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="row" v-scrollanimation>
+  <div class="row">
     <div class="col-12 col-md-4">
       <b-card title="Founder CEO HR" sub-title="Joe Jones |JJ|">
         <div id="over" style="width:100%; height:100%">
@@ -252,7 +252,7 @@ export default {
 .before-enter{
   opacity: 0;
   transform: translateY(100px);
-  transition: all 2s ease-out;
+  transition: all 1s ease-out;
 }
 
 .enter {

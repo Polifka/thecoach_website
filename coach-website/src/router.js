@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home.vue'
 import Team from '@/components/Team.vue'
 import Contact from '@/components/Contact.vue'
+import CoachRules from '@/components/CoachRules.vue'
 
 Vue.use(Router)
 
@@ -15,7 +16,8 @@ const router= new Router({
     routes: [
         { path: '/', component: Home },
         { path: '/Team', component: Team},
-        { path: '/Contact', component: Contact}
+        { path: '/Contact', component: Contact},
+        { path: '/CoachRules', component: CoachRules}
     ]
 })
 

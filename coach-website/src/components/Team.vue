@@ -1,6 +1,6 @@
 <template>
 <div>
-  <div class="row">
+  <div class="row" v-scrollanimation>
     <div class="col-12 col-md-4">
       <b-card title="Founder CEO HR" sub-title="Joe Jones |JJ|">
         <div id="over" style="width:100%; height:100%">
@@ -34,7 +34,7 @@
     </div>
   </div>
   <!-- Zweite Row: -->  
-    <div class="row">
+    <div class="row" v-scrollanimation>
     <div class="col-12 col-md-4">
       <b-card title="Chief Champagne Officer" sub-title="Friedrich Eberhardt |CCO|">
         <div id="over" style="width:100%; height:100%">
@@ -67,7 +67,7 @@
     </div>
   </div>
 <!-- Dritte Row: --> 
-      <div class="row">
+  <div class="row"  v-scrollanimation>
     <div class="col-12 col-md-4">
       <b-card title="Model & Kontentmanager " sub-title="Kosta Rica |MC|">
         <div id="over" style="width:100%; height:100%">
@@ -100,7 +100,7 @@
     </div>
   </div>
 <!-- Vierte Row: --> 
-      <div class="row">
+  <div class="row"  v-scrollanimation>
     <div class="col-12 col-md-4">
       <b-card title="Chief Asien Dolmetscher" sub-title="Hsinlan |CAD|">
         <div id="over" style="width:100%; height:100%">
@@ -133,7 +133,7 @@
     </div>
   </div>
 <!-- Fünfte Row: --> 
-        <div class="row">
+  <div class="row"  v-scrollanimation>
     <div class="col-12 col-md-4">
       <b-card title="Chief Transportation Transformation Officer" sub-title="Fapi Wong |CTTO|">
         <div id="over" style="width:100%; height:100%">
@@ -166,7 +166,7 @@
     </div>
   </div>
 
-        <div class="row">
+  <div class="row"  v-scrollanimation>
     <div class="col-12 col-md-4">
       <b-card title="Mannschaftsarzt" sub-title="Dorian |MA|">
         <div id="over" style="width:100%; height:100%">
@@ -199,7 +199,7 @@
     </div>
   </div>
 
-        <div class="row">
+        <div class="row"  v-scrollanimation>
     <div class="col-12 col-md-4">
       <b-card title="Head of Marketing Placement Management" sub-title="Käptain |HMBM|">
         <div id="over" style="width:100%; height:100%">
@@ -247,6 +247,17 @@ export default {
   margin-left: auto;
   margin-right: auto;
   display: block;
+}
+
+.before-enter{
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 2s ease-out;
+}
+
+.enter {
+  opacity: 1;
+  transform: translateY(0px);
 }
 </style>
 

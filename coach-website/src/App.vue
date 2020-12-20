@@ -30,7 +30,6 @@ export default {
 .main-container {
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 3%;
   min-height: 90%;
 }
 </style>

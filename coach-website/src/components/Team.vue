@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="row">
+    <div class="row" style="margin-top: 3%">
       <div class="col-12 col-md-4">
         <b-card title="Founder CEO HR" sub-title="Joe Jones |JJ|">
           <div id="over" style="width: 100%; height: 100%">

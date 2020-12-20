@@ -221,20 +221,16 @@
         <b-card
           title="Head of Marketing Placement Management"
           sub-title="Käptain |HMBM|"
-        >
-          <div id="over" style="width: 100%; height: 100%">
-            <img src="../assets/team/kaptain.jpg" class="teamImg" />
-          </div>
-          <b-card-text>
-            Fehlt dir noch ein Marketing Gag, geh zum Coach und flieg der
-            Konkurrenz wag.
-          </b-card-text>
-        </b-card>
-      </div>
-      <div class="col-12 col-md-4">
-        <b-card title="Kabelmann" sub-title="Niklas |NKM|">
-          <div id="over" style="width: 100%; height: 100%">
-            <img src="../assets/team/niklas.jpg" class="teamImg" />
+        >          <div class="container">
+            <img
+              src="../assets/team/kaptain.jpg"
+              alt="Avatar"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="text">Niklas!</div>
+            </div>
           </div>
           <b-card-text>
             Ich bin der Kabelmaaan, ich liefer Kabel aus und bekomme von den
@@ -242,11 +238,31 @@
           </b-card-text>
         </b-card>
       </div>
+
+      <div class="col-12 col-md-4">
+        <b-card title="Kabelmann" sub-title="Niklas |NKM|">
+          <div class="container">
+            <img
+              src="../assets/team/niklas.jpg"
+              alt="Avatar"
+              class="image"
+              style="width: 100%"
+            />
+            <div class="middle">
+              <div class="text">Niklas!</div>
+            </div>
+          </div>
+          <b-card-text>
+            Ich bin der Kabelmaaan, ich liefer Kabel aus und bekomme von den
+            ganzen Kablen einen dicken Bauch.
+          </b-card-text>
+        </b-card>
+      </div>      
     </div>
   </div>
 </template>
 
-<script>
+<script>  
 export default {
   name: "instaPage",
   components: {},
@@ -278,6 +294,45 @@ export default {
 .enter {
   opacity: 1;
   transform: translateY(0px);
+}
+
+.container {
+  position: relative;
+  width: 85%;
+  height: 85%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container:hover .image {
+  opacity: 0.3;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  color: black;
+  font-size: 16px;
 }
 </style>
 

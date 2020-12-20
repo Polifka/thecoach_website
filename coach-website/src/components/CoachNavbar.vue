@@ -36,6 +36,12 @@
                   ><span class="sr-only">(current)</span></a
                 >
               </li>
+              <li class="nav-item active">
+                <a class="nav-link"
+                  ><router-link to="/CoachRules">Rules</router-link
+                  ><span class="sr-only">(current)</span></a
+                >
+              </li>
             </ul>
           </b-navbar-nav>
 

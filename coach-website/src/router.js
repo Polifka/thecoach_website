@@ -6,6 +6,7 @@ import Score from '@/components/Score.vue'
 import Team from '@/components/Team.vue'
 import History from '@/components/History.vue'
 import Contact from '@/components/Contact.vue'
+import CoachRules from '@/components/CoachRules.vue'
 
 Vue.use(Router)
 
@@ -19,7 +20,8 @@ const router= new Router({
         { path: '/Team', component: Team},
         { path: '/History', component: History},
         { path: '/Score', component: Score},
-        { path: '/Contact', component: Contact}
+        { path: '/Contact', component: Contact},
+        { path: '/CoachRules', component: CoachRules}
     ]
 })
 

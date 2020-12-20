@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row" style="margin-top: 3%">
     <div
       class="col-md-6 col-lg-5 col-xl-3"
       style="margin: auto; margin-top: 20px"

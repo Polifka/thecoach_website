@@ -3,30 +3,35 @@
     <div class="row">
       <div class="col">
         <form>
-          <h2>Berechne deinen Coach-Score!</h2>
+          <h2>
+            <!-- Muss noch responsive gemacht werden -->
+            <span class="badge badge-dark" style="margin-top: 1%"
+              >Berechne deinen Coach-Score!</span
+            >
+          </h2>
           <br />
-          <div class="form-group">
-            <label for="subject1">Dein Alter:</label>
+          <div class="row" style="margin-top: -1%">
+          <div class="col" >
             <input
-              type="number"
               max="99"
-              v-model="subject1"
+              v-model.number="age"
+              type="number"
               class="form-control"
               id="age"
-              placeholder="Only numbers"
+              placeholder="Dein Alter"
             />
           </div>
-          <div>
-            <label for="subject2">Jahre beim Coach:</label>
+          <div class="col">
             <input
               type="number"
-              v-model="subject2"
+              v-model.number="years"
               class="form-control"
               id="years"
               max="2"
               min="0"
-              placeholder="Hier tippen"
+              placeholder="Jahre beim Coach"
             />
+          </div>
           </div>
         </form>
       </div>
@@ -115,8 +120,8 @@
 export default {
   data() {
     return {
-      subject1: null,
-      subject2: null,
+      age: null,
+      years: null,
       variantBC: null,
       variantCS: null,
       valueCS: null,
@@ -132,7 +137,7 @@ export default {
         { name: "Bitcoin", variant: "secondary", value: 0 },
         { name: "Bier", variant: "dark", value: 0 },
       ],
-      disableButtonStart: false,
+      disableButtonStartV: false,
       disableButtonStop: true,
       disableButtonComment: true,
       timer: null,
@@ -141,7 +146,7 @@ export default {
   },
   methods: {
     randomValue() {
-      this.disableButtonStart = true;
+      this.disableButtonStartV = true;
       this.disableButtonStop = false;
       this.timer = setInterval(() => {
         this.bars.forEach((bar) => (bar.value = 0 + Math.random() * 100));
@@ -179,6 +184,12 @@ export default {
           default:
             break;
         }
+        if (this.age < 40) {
+          this.valueCS += this.age * Math.random()*0,5;
+        }
+        if (this.years <= 2) {
+          this.valueCS += 10 * this.years;
+        }
         if (this.valueCS < 150) {
           this.variantCS = "danger";
           this.variantBC = "danger";
@@ -194,6 +205,18 @@ export default {
         }
         this.disableButtonComment = false;
       }
+    },
+  },
+  computed: {
+    disableButtonStart: function () {
+      if (
+        this.age != null &&
+        this.years != null &&
+        !(this.disableButtonStartV == true)
+      ) {
+        return false;
+      }
+      return true;
     },
   },
 };

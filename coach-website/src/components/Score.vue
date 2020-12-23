@@ -11,27 +11,27 @@
           </h2>
           <br />
           <div class="row" style="margin-top: -1%">
-          <div class="col" >
-            <input
-              max="99"
-              v-model.number="age"
-              type="number"
-              class="form-control"
-              id="age"
-              placeholder="Dein Alter"
-            />
-          </div>
-          <div class="col">
-            <input
-              type="number"
-              v-model.number="years"
-              class="form-control"
-              id="years"
-              max="2"
-              min="0"
-              placeholder="Jahre beim Coach"
-            />
-          </div>
+            <div class="col">
+              <input
+                max="99"
+                v-model.number="age"
+                type="number"
+                class="form-control"
+                id="age"
+                placeholder="Dein Alter"
+              />
+            </div>
+            <div class="col">
+              <input
+                type="number"
+                v-model.number="years"
+                class="form-control"
+                id="years"
+                max="2"
+                min="0"
+                placeholder="Jahre beim Coach"
+              />
+            </div>
           </div>
         </form>
       </div>
@@ -59,26 +59,31 @@
             >
           </div>
 
+          <b-modal ref="error-modal" hide-footer title="Na hör mal!">
+            <div class="d-block text-center">
+              <h4><u>{{ text }}</u></h4>
+            </div>
+            <b-button
+              class="mt-3 col-3"
+              :variant="this.variantBC"
+              block
+              @click="hideModal"
+              style="margin: auto"
+              >Ok Chef
+            </b-button>
+          </b-modal>
+
           <div class="col">
             <b-button
               class="mt-3 float-right"
               :disabled="disableButtonComment"
               :variant="this.variantBC"
-              :class="visible ? null : 'collapsed'"
-              :aria-expanded="visible ? 'true' : 'false'"
-              aria-controls="collapse-4"
-              @click="visible = !visible"
+              @click="showModal"
               style="float: right"
               >Comment from Coach</b-button
             >
           </div>
         </div>
-
-        <b-collapse id="collapse-4" v-model="visible">
-          <b-card-body>
-            <b-card-text>{{ text }}</b-card-text>
-          </b-card-body>
-        </b-collapse>
       </div>
       <div class="col-1"></div>
     </div>
@@ -185,7 +190,7 @@ export default {
             break;
         }
         if (this.age < 40) {
-          this.valueCS += this.age * Math.random()*0,5;
+          (this.valueCS += this.age * Math.random() * 0), 5;
         }
         if (this.years <= 2) {
           this.valueCS += 10 * this.years;
@@ -193,18 +198,25 @@ export default {
         if (this.valueCS < 150) {
           this.variantCS = "danger";
           this.variantBC = "danger";
-          this.text = `Dat ist ja wohl nicht dein Ernst, du und der Coach, LACHHAFT...`;
+          this.text = `Dat ist ja wohl nicht dein Ernst, du und der Coach, LACHHAFT!`;
         } else if (this.valueCS >= 150 && this.valueCS < 350) {
           this.variantCS = "warning";
           this.variantBC = "warning";
-          this.text = `Da fehlt aber noch ein Schritt auf der Buisnesscoach-Leiter du Amateur`;
+          this.text = `Da fehlt aber noch ein Schritt auf der Buisnesscoach-Leiter du Amateur!`;
         } else {
           this.variantCS = "success";
           this.variantBC = "success";
-          this.text = `Willkommen zurück Joe Jones`;
+          this.text = `Immer diese Hacker...`;
         }
         this.disableButtonComment = false;
       }
+    },
+
+    showModal() {
+      this.$refs["error-modal"].show();
+    },
+    hideModal() {
+      this.$refs["error-modal"].hide();
     },
   },
   computed: {

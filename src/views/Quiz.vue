@@ -11,7 +11,7 @@
                 Hast du Lust ein Spiel zu spielen?
               </h2>
               <h5 class="description">
-                Für eine gute Prise unterhaltung sorgen wir von nun an mit
+                Für eine gute Prise Unterhaltung sorgen wir von nun an mit
                 unserem brandneuen Coachquiz. Streng dich an und der Coach kommt
                 dich persönlich zu Hause besuchen!
               </h5>

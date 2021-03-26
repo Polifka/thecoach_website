@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Score from "./views/Score.vue";
+import Quiz from "./views/Quiz.vue";
 import Landing from "./views/Landing.vue";
 import Rules from "./views/Rules.vue";
 import MainNavbar from "./layout/MainNavbar.vue";
@@ -23,6 +24,15 @@ export default new Router({
       path: "/score",
       name: "score",
       components: { default: Score, header: MainNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: "black" }
+      }
+    },
+    {
+      path: "/Quiz",
+      name: "Quiz",
+      components: { default: Quiz, header: MainNavbar, footer: MainFooter },
       props: {
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }

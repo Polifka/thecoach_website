@@ -34,7 +34,7 @@ export default new Router({
       name: "Quiz",
       components: { default: Quiz, header: MainNavbar, footer: MainFooter },
       props: {
-        header: { colorOnScroll: 400 },
+        header: { colorOnScroll: 50 },
         footer: { backgroundColor: "black" }
       }
     },

@@ -54,7 +54,7 @@
                 >
               </md-list-item> -->
 
-              <md-list-item href="#/score">
+              <md-list-item href="#/Quiz">
                 <i class="material-icons">blur_linear</i>
                 <p>Quiz</p>
                 <md-tooltip md-direction="bottom"

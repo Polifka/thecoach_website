@@ -85,7 +85,7 @@
                       </md-button>
                       <md-button
                         @click="nextQuestion()"
-                        :class="{ 'md-success': !next}"
+                        :class="{ 'md-success': !next }"
                         >Weiter</md-button
                       >
                     </div>
@@ -101,12 +101,8 @@
 </template>
 
 <script>
-import { Pagination } from "@/components";
 export default {
-  components: {
-    Pagination,
-  },
-  name: "LayoutHorizontalResponsive",
+  name: "Quiz",
   bodyClass: "profile-page",
   data() {
     return {
@@ -123,8 +119,8 @@ export default {
             { props: "2020" },
             { props: "2019", correct: true },
             { props: "2030" },
-            { props: "2052" },
-          ],
+            { props: "2052" }
+          ]
         },
         {
           question: "Was besitzt der Coach NICHT?",
@@ -132,8 +128,8 @@ export default {
             { props: "Ipad" },
             { props: "Sim Karte" },
             { props: "Merchandise" },
-            { props: "Ein Produkt", correct: true },
-          ],
+            { props: "Ein Produkt", correct: true }
+          ]
         },
         {
           question: "Wer ist der größte Fan des Coaches?",
@@ -141,8 +137,8 @@ export default {
             { props: "Nicky Noshew" },
             { props: "Networker Mummy" },
             { props: "Niklas Freihofer", correct: true },
-            { props: "Christian Steiffen" },
-          ],
+            { props: "Christian Steiffen" }
+          ]
         },
         {
           question: "Was war das Ziel der 1. Buisnesstour?",
@@ -150,8 +146,8 @@ export default {
             { props: "LR-Werksbesichtigung", correct: true },
             { props: "Solingen" },
             { props: "Cambodia" },
-            { props: "Christian Steiffen" },
-          ],
+            { props: "Christian Steiffen" }
+          ]
         },
         {
           question: "Aus was besteht das Coach-Getränk?",
@@ -159,8 +155,8 @@ export default {
             { props: "Cola mit Ice" },
             { props: "Bier" },
             { props: "Wasser" },
-            { props: "99% Sekt + 1% Multi", correct: true },
-          ],
+            { props: "99% Sekt + 1% Multi", correct: true }
+          ]
         },
         {
           question: "Was gibt’s beim Coach Merchandise-Store zu kaufen?",
@@ -168,27 +164,29 @@ export default {
             { props: "Bikini", correct: true },
             { props: "Handschuhe" },
             { props: "Müllbeutel" },
-            { props: "Sekt" },
-          ],
+            { props: "Sekt" }
+          ]
         },
         {
-          question: "Welches Unternehmen hat der Buisnesscoach eigenhändig zerstört?",
+          question:
+            "Welches Unternehmen hat der Buisnesscoach eigenhändig zerstört?",
           propositions: [
             { props: "Demokratos" },
             { props: "IceBourghBourgh" },
             { props: "Kierdorf Trading Gbr" },
-            { props: "Volume X", correct: true },
-          ],
+            { props: "Volume X", correct: true }
+          ]
         },
         {
-          question: "Welches Unternehmen hat der Buisnesscoach eigenhändig aufgezogen?",
+          question:
+            "Welches Unternehmen hat der Buisnesscoach eigenhändig aufgezogen?",
           propositions: [
             { props: "Zoom", correct: true },
             { props: "McDonalds" },
             { props: "Subway" },
-            { props: "BurgerKingKong" },
-          ],
-        },
+            { props: "BurgerKingKong" }
+          ]
+        }
       ],
       a: 0,
       b: 1,
@@ -197,7 +195,7 @@ export default {
       quiz: true,
       score: 0,
       correct: false,
-      progress: 0,
+      progress: 0
     };
   },
 
@@ -262,17 +260,17 @@ export default {
     },
     restartQuiz() {
       Object.assign(this.$data, this.$options.data()); // reset data in vue
-    },
+    }
   },
 
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/team/lr_team_wine.jpg"),
-    },
+      default: require("@/assets/img/team/lr_team_wine.jpg")
+    }
   },
   computed: {
-    disableButtonStart: function () {
+    disableButtonStart: function() {
       if (this.age != null && !(this.disableButtonStartV == true)) {
         return false;
       }
@@ -280,9 +278,9 @@ export default {
     },
     headerStyle() {
       return {
-        backgroundImage: `url(${this.header})`,
+        backgroundImage: `url(${this.header})`
       };
-    },
+    }
   },
   move() {
     var elem = document.getElementById("myBar");
@@ -297,7 +295,7 @@ export default {
         elem.innerHTML = width * 1 + "%";
       }
     }
-  },
+  }
 };
 </script>
 
@@ -398,6 +396,6 @@ li.correct {
 }
 
 .footer-quiz {
-    margin-bottom: 215px;
+  margin-bottom: 215px;
 }
 </style>

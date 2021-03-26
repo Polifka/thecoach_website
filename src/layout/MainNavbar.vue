@@ -57,9 +57,7 @@
               <md-list-item href="#/Quiz">
                 <i class="material-icons">blur_linear</i>
                 <p>Quiz</p>
-                <md-tooltip md-direction="bottom"
-                  >Bock auf gamblen?</md-tooltip
-                >
+                <md-tooltip md-direction="bottom">Bock auf gamblen?</md-tooltip>
               </md-list-item>
 
               <md-list-item
@@ -95,7 +93,7 @@ function resizeThrottler(actualResizeHandler) {
 import MobileMenu from "@/layout/MobileMenu";
 export default {
   components: {
-    MobileMenu,
+    MobileMenu
   },
   props: {
     type: {
@@ -109,24 +107,24 @@ export default {
           "danger",
           "success",
           "warning",
-          "info",
+          "info"
         ].includes(value);
-      },
+      }
     },
     colorOnScroll: {
       type: Number,
-      default: 0,
+      default: 0
     },
     img: {
       type: String,
-      default: require("@/assets/img/logo/logo.ico.png"),
-    },
+      default: require("@/assets/img/logo/logo.ico.png")
+    }
   },
   data() {
     return {
       extraNavClasses: "",
       toggledClass: false,
-      showHeadline: true,
+      showHeadline: true
     };
   },
   computed: {},
@@ -175,14 +173,14 @@ export default {
       if (element_id) {
         element_id.scrollIntoView({ block: "end", behavior: "smooth" });
       }
-    },
+    }
   },
   mounted() {
     document.addEventListener("scroll", this.scrollListener);
   },
   beforeDestroy() {
     document.removeEventListener("scroll", this.scrollListener);
-  },
+  }
 };
 </script>
 <style scoped>

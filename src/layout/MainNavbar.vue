@@ -53,7 +53,6 @@
                   >Ermittle deinen Coach Score</md-tooltip
                 >
               </md-list-item> -->
-              
 
               <md-list-item
                 href="https://www.instagram.com/thebuisnesscoach/"
@@ -179,10 +178,10 @@ export default {
 };
 </script>
 <style scoped>
-.logo-width{
+.logo-width {
   max-width: 40px;
 }
-.textBuisness-width{
+.textBuisness-width {
   margin-left: 10px;
 }
 </style>

@@ -694,10 +694,15 @@
 </template>
 
 <script>
+import $ from 'jquery'
 export default {
   bodyClass: "landing-page",
   props: {
     header: {
+      type: String,
+      default: require("@/assets/img/team/lr_team_all.jpg")
+    },
+    headerMobile:{
       type: String,
       default: require("@/assets/img/team/lr_team_wall.jpg")
     },
@@ -795,11 +800,14 @@ export default {
   },
   computed: {
     headerStyle() {
-      return {
-        backgroundImage: `url(${this.header})`
-      };
-    }
-  },
+      
+        if ($(window).width() < 960) {
+          return {backgroundImage: `url(${this.headerMobile})`}
+        } else {
+            return {backgroundImage: `url(${this.header})`}
+        }        
+      }
+    },
   methods: {
     mailto() {
       window.open(

@@ -79,21 +79,21 @@ export default {
     return {
       classicModal: false,
       selectedDate: new Date("2018/03/26"),
-      carousel1: require("@/assets/img/rules/2.jpg"),
-      carousel2: require("@/assets/img/rules/3.jpg"),
-      carousel3: require("@/assets/img/rules/4.jpg"),
-      carousel4: require("@/assets/img/rules/5.jpg"),
-      carousel5: require("@/assets/img/rules/9.jpg"),
-      carousel6: require("@/assets/img/rules/10.jpg"),
-      carousel7: require("@/assets/img/rules/3.jpg"),
-      carousel8: require("@/assets/img/rules/9.jpg"),
-      carousel9: require("@/assets/img/rules/2.jpg")
+      carousel1: require("@/assets/img/rules/2.webp"),
+      carousel2: require("@/assets/img/rules/3.webp"),
+      carousel3: require("@/assets/img/rules/4.webp"),
+      carousel4: require("@/assets/img/rules/5.webp"),
+      carousel5: require("@/assets/img/rules/9.webp"),
+      carousel6: require("@/assets/img/rules/10.webp"),
+      carousel7: require("@/assets/img/rules/3.webp"),
+      carousel8: require("@/assets/img/rules/9.webp"),
+      carousel9: require("@/assets/img/rules/2.webp")
     };
   },
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/team/lr_team_wine.jpg")
+      default: require("@/assets/img/team/lr_team_wine.webp")
     }
   },
   computed: {

@@ -266,7 +266,7 @@ export default {
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/team/lr_team_wine.jpg")
+      default: require("@/assets/img/team/lr_team_wine.webp")
     }
   },
   computed: {

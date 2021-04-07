@@ -90,11 +90,11 @@
               <div class="md-layout-item md-medium-size-33 md-small-size-100">
                 <div class="team-player">
                   <md-card class="md-card-plain">
-                    <div class="md-layout-item md-size-50 mx-auto">
+                    <div class="md-layout-item md-size-50 mx-auto" >
                       <img
                         :src="teamKM"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -120,7 +120,7 @@
                       <img
                         :src="teamMSM"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -146,7 +146,7 @@
                       <img
                         :src="teamJJ"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -174,7 +174,7 @@
                       <img
                         :src="teamQM"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -200,7 +200,7 @@
                       <img
                         :src="teamCCO"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -226,7 +226,7 @@
                       <img
                         :src="teamSBA"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -254,7 +254,7 @@
                       <img
                         :src="teamMC"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -280,7 +280,7 @@
                       <img
                         :src="teamHMC"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -305,7 +305,7 @@
                       <img
                         :src="teamWRM"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -333,7 +333,7 @@
                       <img
                         :src="teamCAD"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -359,7 +359,7 @@
                       <img
                         :src="teamCWO"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -386,7 +386,7 @@
                       <img
                         :src="teamCDS"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -415,7 +415,7 @@
                       <img
                         :src="teamCTTO"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -442,7 +442,7 @@
                       <img
                         :src="teamPDM"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -468,7 +468,7 @@
                       <img
                         :src="teamPG"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -497,7 +497,7 @@
                       <img
                         :src="teamMA"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -524,7 +524,7 @@
                       <img
                         :src="teamMM"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -551,7 +551,7 @@
                       <img
                         :src="teamHR"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -580,7 +580,7 @@
                       <img
                         :src="teamHMBM"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -607,7 +607,7 @@
                       <img
                         :src="teamNKM"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -634,7 +634,7 @@
                       <img
                         :src="teamLD"
                         alt="Thumbnail Image"
-                        class="img-raised rounded-circle img-fluid"
+                        class="web-raised rounded-circle web-fluid"
                       />
                     </div>
                     <h4 class="card-title">
@@ -700,95 +700,95 @@ export default {
   props: {
     header: {
       type: String,
-      default: require("@/assets/img/team/lr_team_all.jpg")
+      default: require("@/assets/img/team/lr_team_all.webp")
     },
     headerMobile:{
       type: String,
-      default: require("@/assets/img/team/lr_team_wall.jpg")
+      default: require("@/assets/img/team/lr_team_wall.webp")
     },
     teamCAD: {
       type: String,
-      default: require("@/assets/img/faces/cad.jpg")
+      default: require("@/assets/img/faces/cad.webp")
     },
     teamCCO: {
       type: String,
-      default: require("@/assets/img/faces/cco.jpg")
+      default: require("@/assets/img/faces/cco.webp")
     },
     teamCDS: {
       type: String,
-      default: require("@/assets/img/faces/cds.jpg")
+      default: require("@/assets/img/faces/cds.webp")
     },
     teamCTTO: {
       type: String,
-      default: require("@/assets/img/faces/ctto.jpg")
+      default: require("@/assets/img/faces/ctto.webp")
     },
     teamCWO: {
       type: String,
-      default: require("@/assets/img/faces/cwo.jpg")
+      default: require("@/assets/img/faces/cwo.webp")
     },
     teamHMBM: {
       type: String,
-      default: require("@/assets/img/faces/hmbm.jpg")
+      default: require("@/assets/img/faces/hmbm.webp")
     },
     teamHMC: {
       type: String,
-      default: require("@/assets/img/faces/hmc.jpg")
+      default: require("@/assets/img/faces/hmc.webp")
     },
     teamHR: {
       type: String,
-      default: require("@/assets/img/faces/hr.jpg")
+      default: require("@/assets/img/faces/hr.webp")
     },
     teamJJ: {
       type: String,
-      default: require("@/assets/img/faces/jj.jpg")
+      default: require("@/assets/img/faces/jj.webp")
     },
     teamKM: {
       type: String,
-      default: require("@/assets/img/faces/km.jpg")
+      default: require("@/assets/img/faces/km.webp")
     },
     teamMA: {
       type: String,
-      default: require("@/assets/img/faces/ma.jpg")
+      default: require("@/assets/img/faces/ma.webp")
     },
     teamMC: {
       type: String,
-      default: require("@/assets/img/faces/mc.jpg")
+      default: require("@/assets/img/faces/mc.webp")
     },
     teamMM: {
       type: String,
-      default: require("@/assets/img/faces/mm.jpg")
+      default: require("@/assets/img/faces/mm.webp")
     },
     teamMSM: {
       type: String,
-      default: require("@/assets/img/faces/msm.jpg")
+      default: require("@/assets/img/faces/msm.webp")
     },
     teamNKM: {
       type: String,
-      default: require("@/assets/img/faces/nkm.jpg")
+      default: require("@/assets/img/faces/nkm.webp")
     },
     teamPDM: {
       type: String,
-      default: require("@/assets/img/faces/pdm.jpg")
+      default: require("@/assets/img/faces/pdm.webp")
     },
     teamPG: {
       type: String,
-      default: require("@/assets/img/faces/pg.jpg")
+      default: require("@/assets/img/faces/pg.webp")
     },
     teamQM: {
       type: String,
-      default: require("@/assets/img/faces/qm.jpg")
+      default: require("@/assets/img/faces/qm.webp")
     },
     teamSBA: {
       type: String,
-      default: require("@/assets/img/faces/sba.jpg")
+      default: require("@/assets/img/faces/sba.webp")
     },
     teamWRM: {
       type: String,
-      default: require("@/assets/img/faces/wrm.jpg")
+      default: require("@/assets/img/faces/wrm.webp")
     },
     teamLD: {
       type: String,
-      default: require("@/assets/img/faces/ld.jpg")
+      default: require("@/assets/img/faces/ld.webp")
     }
   },
   data() {

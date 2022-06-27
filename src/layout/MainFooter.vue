@@ -8,11 +8,6 @@
       <nav>
         <ul>
           <li>
-            <a href="https://www.demokratos.de">
-              Demokratos
-            </a>
-          </li>
-          <li>
             <a
               href="https://www.youtube.com/channel/UCleUFNSp0hMVTC2ySuy47Ow/featured"
             >

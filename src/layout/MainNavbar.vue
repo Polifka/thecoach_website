@@ -1,30 +1,18 @@
 <template>
-  <md-toolbar
-    id="toolbar"
-    md-elevation="0"
-    class="md-transparent md-absolute"
-    :class="extraNavClasses"
-    :color-on-scroll="colorOnScroll"
-  >
+  <md-toolbar id="toolbar" md-elevation="0" class="md-transparent md-absolute" :class="extraNavClasses"
+    :color-on-scroll="colorOnScroll">
     <div class="md-toolbar-row md-collapse-lateral">
       <div class="md-toolbar-section-start" v-if="showHeadline == true">
         <md-list-item href="#/">
-          <img
-            class="navbar-logo logo-width"
-            src="@/assets/img/logo/logo_big.png"
-            alt="Coach Logo"
-          />
+          <img class="navbar-logo logo-width" src="@/assets/img/logo/logo_big.png" alt="Coach Logo" />
           <div class="d-none d-md-block textBuisness-width">
             thebuisnesscoach
           </div>
         </md-list-item>
       </div>
       <div class="md-toolbar-section-end">
-        <md-button
-          class="md-just-icon md-simple md-toolbar-toggle"
-          :class="{ toggled: toggledClass }"
-          @click="toggleNavbarMobile()"
-        >
+        <md-button class="md-just-icon md-simple md-toolbar-toggle" :class="{ toggled: toggledClass }"
+          @click="toggleNavbarMobile()">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
@@ -42,9 +30,7 @@
               <md-list-item href="#/rules">
                 <i class="material-icons">burst_mode</i>
                 <p>Rules</p>
-                <md-tooltip md-direction="bottom"
-                  >Erstelle deine Coach Regeln</md-tooltip
-                >
+                <md-tooltip md-direction="bottom">Erstelle deine Coach Regeln</md-tooltip>
               </md-list-item>
               <!-- <md-list-item href="#/score">
                 <i class="material-icons">blur_linear</i>
@@ -54,16 +40,19 @@
                 >
               </md-list-item> -->
 
+              <md-list-item href="#/History">
+                <i class="material-icons">burst_mode</i>
+                <p>History</p>
+                <md-tooltip md-direction="bottom">Die Story bro</md-tooltip>
+              </md-list-item>
+
               <md-list-item href="#/Quiz">
                 <i class="material-icons">blur_linear</i>
                 <p>Quiz</p>
                 <md-tooltip md-direction="bottom">Bock auf gamblen?</md-tooltip>
               </md-list-item>
 
-              <md-list-item
-                href="https://www.instagram.com/thebuisnesscoach/"
-                target="_blank"
-              >
+              <md-list-item href="https://www.instagram.com/thebuisnesscoach/" target="_blank">
                 <i class="fab fa-instagram"></i>
                 <p>Coachagram</p>
                 <md-tooltip md-direction="bottom">Folge dem Coach</md-tooltip>
@@ -187,6 +176,7 @@ export default {
 .logo-width {
   max-width: 40px;
 }
+
 .textBuisness-width {
   margin-left: 10px;
 }

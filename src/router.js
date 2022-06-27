@@ -2,6 +2,7 @@ import Vue from "vue";
 import Router from "vue-router";
 import Score from "./views/Score.vue";
 import Quiz from "./views/Quiz.vue";
+import History from "./views/History.vue";
 import Landing from "./views/Landing.vue";
 import Rules from "./views/Rules.vue";
 import MainNavbar from "./layout/MainNavbar.vue";
@@ -46,7 +47,16 @@ export default new Router({
         header: { colorOnScroll: 400 },
         footer: { backgroundColor: "black" }
       }
-    }
+    },
+    {
+      path: "/history",
+      name: "history",
+      components: { default: History, header: MainNavbar, footer: MainFooter },
+      props: {
+        header: { colorOnScroll: 400 },
+        footer: { backgroundColor: "black" }
+      }
+    },
   ],
   scrollBehavior: to => {
     if (to.hash) {

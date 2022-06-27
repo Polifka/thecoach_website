@@ -171,9 +171,9 @@ export default {
           question:
             "Welches Unternehmen hat der Buisnesscoach eigenhändig zerstört?",
           propositions: [
-            { props: "Demokratos" },
+            { props: "Deine Mudda" },
             { props: "IceBourghBourgh" },
-            { props: "Kierdorf Trading Gbr" },
+            { props: "Glo Up Dinero Gang" },
             { props: "Volume X", correct: true }
           ]
         },
